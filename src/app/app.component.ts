@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from './services/login.service';
+
 declare var sb_admin_2:any;
 
 @Component({
@@ -10,15 +10,15 @@ declare var sb_admin_2:any;
 export class AppComponent implements OnInit{
 
   constructor(
-    public login : LoginService
+
   ){
 
   }
 
   ngOnInit(): void {
-    
+
     sb_admin_2();
-    
+
   }
-  
+
 }

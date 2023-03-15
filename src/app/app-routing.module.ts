@@ -1,3 +1,9 @@
+import { BoutiquesComponent } from './Components/boutiques/boutiques.component';
+import { ManagersComponent } from './Components/managers/managers.component';
+import { VendeursComponent } from './Components/vendeurs/vendeurs.component';
+import { CommandesComponent } from './Components/commandes/commandes.component';
+import { PromotionsComponent } from './Components/promotions/promotions.component';
+import { CabinesComponent } from './Components/cabines/cabines.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BlankComponent } from './blank/blank.component';
@@ -25,27 +31,57 @@ const routes: Routes = [
   {
     path: 'blank',
     component: BlankComponent,
-    canActivate : [AuthGuardService] 
+    canActivate : [AuthGuardService]
+  },
+  {
+    path: 'cabines',
+    component: CabinesComponent,
+    canActivate : [AuthGuardService]
+  },
+  {
+    path: 'commandes',
+    component: CommandesComponent,
+    canActivate : [AuthGuardService]
+  },
+  {
+    path: 'promotions',
+    component: PromotionsComponent,
+    canActivate : [AuthGuardService]
+  },
+  {
+    path: 'vendeurs',
+    component: VendeursComponent,
+    canActivate : [AuthGuardService]
+  },
+  {
+    path: 'boutiques',
+    component: BoutiquesComponent,
+    canActivate : [AuthGuardService]
+  },
+  {
+    path: 'managers',
+    component: ManagersComponent,
+    canActivate : [AuthGuardService]
   },
   {
     path: 'buttons',
     component: ButtonsComponent,
-    canActivate : [AuthGuardService] 
+    canActivate : [AuthGuardService]
   },
   {
     path: 'cards',
     component: CardsComponent,
-    canActivate : [AuthGuardService] 
-  },  
+    canActivate : [AuthGuardService]
+  },
   {
     path: 'charts',
     component: ChartsComponent,
-    canActivate : [AuthGuardService] 
-  }, 
+    canActivate : [AuthGuardService]
+  },
   {
     path: 'dashboard',
     component: DashboardComponent,
-    canActivate : [AuthGuardService] 
+    canActivate : [AuthGuardService]
   },
   {
     path: 'forgot-password',
@@ -54,41 +90,41 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
-  },  
+  },
   {
     path: 'register',
-    component: RegisterComponent 
+    component: RegisterComponent
   },
   {
     path: 'tables',
     component: TablesComponent,
-    canActivate : [AuthGuardService] 
+    canActivate : [AuthGuardService]
   },
   {
     path: 'utilities-animation',
     component: UtilitiesAnimationComponent,
-    canActivate : [AuthGuardService] 
+    canActivate : [AuthGuardService]
   },
   {
     path: 'utilities-border',
     component: UtilitiesBorderComponent,
-    canActivate : [AuthGuardService] 
+    canActivate : [AuthGuardService]
   },
   {
     path: 'utilities-color',
     component: UtilitiesColorComponent,
-    canActivate : [AuthGuardService] 
+    canActivate : [AuthGuardService]
   },
   {
     path: 'utilities-other',
     component: UtilitiesOtherComponent,
-    canActivate : [AuthGuardService] 
+    canActivate : [AuthGuardService]
   },
   {
     path: '404',
     component: NotFoundComponent,
-    canActivate : [AuthGuardService] 
-  },  
+    canActivate : [AuthGuardService]
+  },
   {
     path: '**',
     redirectTo: '/404'

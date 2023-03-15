@@ -1,0 +1,82 @@
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Gérer les managers</h1>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <div class="row">
+
+        <div class="col-6">
+                                    <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ajouter un manager
+            </button>
+          </div>
+        </div>
+      </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                      <th>Nom</th>
+                      <th>Prenom</th>
+                      <th>Username</th>
+                      <th>Téléphone</th>
+                      <th>Adresse</th>
+                      <th>Etat</th>
+                      <th>Modifier </th>
+                      <th>Désactiver</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                      <th>Nom</th>
+                      <th>Prenom</th>
+                      <th>Username</th>
+                      <th>Téléphone</th>
+                      <th>Adresse</th>
+                      <th>Etat </th>
+                      <th>Modifier </th>
+                      <th>Désactiver </th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                  <tr class="table-success">
+                    <td>Elhamedi</td>
+                    <td>Dorsaf</td>
+                    <td>DorsafElhamedi</td>
+                    <td>52659600</td>
+                    <td>Soliman</td>
+                    <td>Activée</td>
+                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
+                    <td><button type="button" class="btn btn-light text-center">Désactiver</button></td>
+                </tr>
+                <tr class="table-success">
+                    <td>Hichri</td>
+                    <td>Mahdi</td>
+                    <td>MahdiHichri</td>
+                    <td>58669002</td>
+                    <td>Soliman</td>
+                    <td>Activée</td>
+                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
+                    <td><button type="button" class="btn btn-light text-center">Désactiver</button></td>
+                </tr>
+                <tr  class="table-secondary">
+                    <td>Mejri</td>
+                    <td>Ons</td>
+                    <td>MejriOns</td>
+                    <td>55555555</td>
+                    <td>Sokra</td>
+                    <td>Désactivée</td>
+                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
+                    <td><button type="button" class="btn btn-light text-center">Désactiver</button></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <app-modal-manger></app-modal-manger>
+</div>

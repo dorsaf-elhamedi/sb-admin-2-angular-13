@@ -1,0 +1,81 @@
+
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Gérer les boutiques</h1>
+
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+
+        <div class="row">
+
+          <div class="col-6">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ajouter une boutique
+              </button>
+           </div>
+      </div>
+    </div>
+    <div class="card-body">
+
+
+
+
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                      <th>Nom</th>
+                      <th>Etablissement</th>
+                      <th>Username Manager</th>
+                      <th>Modifier</th>
+                      <th>Désactiver</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                      <th>Nom</th>
+                      <th>Etablissement</th>
+                      <th>Username Manager</th>
+                      <th>Modifier</th>
+                      <th>Désactiver</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                  <tr class="table-danger">
+                    <td>Zen</td>
+                    <td>Ben Arouss</td>
+                    <td>HichriMahdi</td>
+                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
+                    <td><button type="button" class="btn btn-light text-center">Désactiver</button></td>
+                </tr>
+                <tr class="table-success">
+                    <td>Zen</td>
+                    <td >Centre ville</td>
+                    <td>DorsafElhamedi</td>
+                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
+                    <td><button type="button" class="btn btn-light text-center">Désactiver</button></td>
+                </tr>
+                <tr class="table-danger">
+                    <td>Zen</td>
+                    <td >Mourouj</td>
+                    <td>DorsafElhamedi</td>
+                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
+                    <td><button type="button" class="btn btn-light text-center">Désactiver</button></td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>Zen</td>
+                    <td > Slimen</td>
+                    <td>DorsafElhamedi</td>
+                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
+                    <td><button type="button" class="btn btn-light text-center">Désactiver</button></td>
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <app-modal-boutique></app-modal-boutique>
+</div>

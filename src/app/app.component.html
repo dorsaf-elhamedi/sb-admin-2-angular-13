@@ -3,7 +3,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <app-side-bar *ngIf="login.isLoggedIn"></app-side-bar>
+        <app-side-bar></app-side-bar>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -13,24 +13,21 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <app-top-bar *ngIf="login.isLoggedIn"></app-top-bar>
+                <app-top-bar></app-top-bar>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <router-outlet></router-outlet>            
+                    <router-outlet></router-outlet>
 
                 </div>
-                
+
                 <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <app-footer *ngIf="login.isLoggedIn"></app-footer>
-            <!-- End of Footer -->
 
         </div>
         <!-- End of Content Wrapper -->
@@ -67,7 +64,7 @@
 
     <div class="container">
 
-        <router-outlet></router-outlet>            
+        <router-outlet></router-outlet>
 
     </div>
 

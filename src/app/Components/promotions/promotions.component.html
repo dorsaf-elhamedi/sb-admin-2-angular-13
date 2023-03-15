@@ -1,0 +1,64 @@
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Gérer les promotions</h1>
+
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <div class="row">
+
+        <div class="col-6">
+          <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ajouter une promotion
+            </button>
+         </div>
+      </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                      <th>Code promotion</th>
+                      <th>Affiche</th>
+                      <th>Date Début</th>
+                      <th>Date Fin</th>
+                      <th>Supprimer</th>
+                      <th>Modifier</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                      <th>Code promotion</th>
+                      <th>Affiche</th>
+                      <th>Date Début</th>
+                      <th>Date Fin</th>
+                      <th>Supprimer</th>
+                      <th>Modifier</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                  <tr class="table-success">
+                    <td>1</td>
+                    <td>promo2.svg</td>
+                    <td>10/03/2023</td>
+                    <td>16/03/2023</td>
+                    <td><button type="button" class="btn btn-light text-center">Supprimer</button></td>
+                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td>2</td>
+                    <td>promo1.svg</td>
+                    <td>22/03/2023</td>
+                    <td>27/03/2023</td>
+                    <td><button type="button" class="btn btn-light text-center">Supprimer</button></td>
+                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <app-modal-promotion></app-modal-promotion>
+</div>
