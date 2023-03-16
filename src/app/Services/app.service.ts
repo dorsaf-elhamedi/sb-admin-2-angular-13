@@ -23,9 +23,24 @@ export class AppService {
     console.log(boutique.ToJson())
     return this.http.post(this.apiUrl+'Boutiques', boutique.ToJson());
   }
+  deleteBoutique(etablissement: String): Observable<any>
+  {
+    console.log("deleteBoutique function work");
+    return this.http.delete(this.apiUrl+'Boutiques/'+etablissement);
+  }
+
+
+
+
+
+
+
+
+
   getPartenaires(): Observable<any>
   {
     console.log("getPartenaires function work");
     return this.http.get(this.apiUrl+'Partenaires');
   }
+
 }

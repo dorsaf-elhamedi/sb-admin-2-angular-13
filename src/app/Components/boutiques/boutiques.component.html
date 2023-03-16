@@ -29,8 +29,7 @@
                       <th>Nom</th>
                       <th>Etablissement</th>
                       <th>Username Manager</th>
-                      <th>Modifier</th>
-                      <th>Désactiver</th>
+                      <th>Supprimer</th>
                     </tr>
                 </thead>
                 <tfoot>
@@ -38,41 +37,16 @@
                       <th>Nom</th>
                       <th>Etablissement</th>
                       <th>Username Manager</th>
-                      <th>Modifier</th>
-                      <th>Désactiver</th>
+                      <th>Supprimer</th>
                     </tr>
                 </tfoot>
                 <tbody>
-                  <tr class="table-danger">
-                    <td>Zen</td>
-                    <td>Ben Arouss</td>
+                  <tr class="table-danger" *ngFor="let boutique of Boutiques; let i = index">
+                    <td>{{boutique.nom}}</td>
+                    <td>{{boutique.etablissement}}</td>
                     <td>HichriMahdi</td>
-                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
-                    <td><button type="button" class="btn btn-light text-center">Désactiver</button></td>
+                    <td class="text-center"><button type="button" class="btn btn-light text-center" (click)="deleteBoutique(boutique.etablissement,i)">Supprimer</button></td>
                 </tr>
-                <tr class="table-success">
-                    <td>Zen</td>
-                    <td >Centre ville</td>
-                    <td>DorsafElhamedi</td>
-                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
-                    <td><button type="button" class="btn btn-light text-center">Désactiver</button></td>
-                </tr>
-                <tr class="table-danger">
-                    <td>Zen</td>
-                    <td >Mourouj</td>
-                    <td>DorsafElhamedi</td>
-                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
-                    <td><button type="button" class="btn btn-light text-center">Désactiver</button></td>
-                </tr>
-                <tr class="table-secondary">
-                    <td>Zen</td>
-                    <td > Slimen</td>
-                    <td>DorsafElhamedi</td>
-                    <td><button type="button" class="btn btn-light text-center">Modifier</button></td>
-                    <td><button type="button" class="btn btn-light text-center">Désactiver</button></td>
-                </tr>
-
-
                 </tbody>
             </table>
         </div>

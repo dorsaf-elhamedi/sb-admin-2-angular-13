@@ -8,9 +8,10 @@ declare var $:any;
   templateUrl: './boutiques.component.html',
   styleUrls: ['./boutiques.component.css']
 })
+
 export class BoutiquesComponent implements OnInit {
 
-  Boutiques: any;
+  Boutiques: {"nom": String, "etablissement": String}[] = [];
   constructor(private appService: AppService) { }
   ngOnInit(): void {
     $('#dataTable').DataTable();
@@ -24,6 +25,24 @@ export class BoutiquesComponent implements OnInit {
       {
         console.log("getBoutiques resultat: "+data);
         this.Boutiques = data;
+      }
+    )
+  }
+  deleteBoutique(etablissement: String, index: number)
+  {
+    this.appService.deleteBoutique(etablissement).subscribe(
+      (data) =>
+      {
+        console.log("deleteBoutiques resultat: "+data);
+        if(data.done == "True")
+        {
+          this.Boutiques.splice(index,1)
+          alert("Boutique avec l'etablissement" + data.etablissement + " est supprimée avec succès")
+        }
+        else
+        {
+          alert("échec de suppression")
+        }
       }
     )
   }
